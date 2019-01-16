@@ -1,7 +1,7 @@
 # Breast-Cancer-Detection-using-deep-belief-network-from-scratch
 DBN (deep belief network) implementation for breast cancer detection
 
-In this project i've used Deep belief network (DBN) to pre-train the model. Then, i've used back-propagation algorithm to optimize the model.
+In this project i've used Deep belief network (DBN) to pre-train the model. Then, i've used back-propagation algorithm to optimize the model. This project is completely developed from scratch using basic library like numpy, pandas and matplotlib.
 Dataset is taken from UCI Machine Learning Repository 
 
 Link to dataset: https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(original)
