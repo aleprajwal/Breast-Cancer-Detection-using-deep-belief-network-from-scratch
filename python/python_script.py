@@ -3,7 +3,7 @@ import json
 import numpy as np
 
 
-filename = '/home/prajwal/Projects/CancerDetector/python/classifier/fineTunedModel.pkl'
+filename = './classifier/fineTunedModel.pkl'
 network = pickle.load(open(filename, 'rb'))
 
 
@@ -39,7 +39,7 @@ def forward_propagate(network, row):
     return inputs
 
 
-def readJson(filename='/home/prajwal/Projects/CancerDetector/python/json/data.json'):
+def readJson(filename='./json/data.json'):
     dataset = []
     with open(filename, 'r') as file:
         data = json.load(file)
@@ -54,7 +54,7 @@ if __name__ == '__main__':
     dataset = normalizeDataset(dataset)
     output = forward_propagate(network, dataset)
     result = {'result': output[0]}
-    json.dump(result, open('/home/prajwal/Projects/CancerDetector/python/json/result.json', 'w'))
+    json.dump(result, open('./json/result.json', 'w'))
     print(output)
     if output[0] >= 0.7:
         print('Malignant')
